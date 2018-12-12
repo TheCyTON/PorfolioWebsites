@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ViewPort</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+* {box-sizing: border-box}
+/* Set height of body and the document to 100% */
+
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body>
+
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Page 1</button>
+  <button class="tablink" onclick="openPage('News', this, 'green')">Page 2</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Page 3</button>
+  <button class="tablink" onclick="openPage('About', this, 'orange')">Page 4</button>
+
+  <div id="Home" class="tabcontent">
+    <table width="100%"cellpadding="1px" cellspacing="5px" bgcolor="#000000" >
+      <tr>
+        <th><h2>How to use docker-compose in Ubuntu?</h2></th>
+        <th><h1>Screen Output</h1></th>
+      </tr>
+
+      <tr>
+        <td>
+          <p><h3>Step 1: Install docker-compose.</h3></p>
+          <p>$ docker-compose -v</p>
+          <p align="left">1. https://github.com/docker/compose/rel...</p>
+          <p>or</p>
+          <p>2. Using PIP pip install -U docker-compose</p>
+          <br>
+          <p><h3>Step 2: Create docker compose file at any location on you system.</h3></p>
+          <p>$ mkdir DockerComposeFile</p>
+          <p>$ cd DockerComposeFile</p>
+          <p>$ touch docker-compose.yml</p>
+          <p>$ ls</p>
+          <p>docker-compose.yml .</p>
+          <br>
+          <p><h3>Step 3: Step 3: Check the validity of file by command.</h3></p>
+          <p>$ docker-compose config,</p>
+          <p>ERROR: yaml.scanner.ScannerError: while scanning for the next token
+          <p>found character '\t' that cannot start any token
+          <p>  in "./docker-compose.yml", line 3, column 1
+          <p>grasshopper@HP-Laptop:~/docker-composer$
+          <p>
+          MUST WRITE AS INDICATED ABOVE
+          <p>
+          <p>grasshopper@HP-Laptop:~/docker-composer$docker-compose config
+          <p>services:
+          <p>  database:
+          <p>    image: redis
+          <p>  web:
+          <p>    image: nginx
+          <p>version: '3.0'
+          <p>
+          <p>grasshopper@HP-Laptop:~/docker-composer$
+        </td>
+
+        <td style="background: #000000">
+            <p>docker-compose version 1.23.1, build b02f130</p>
+            <p>$ cd DockerComposeFile</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="News" class="tabcontent">
+    <h3>Page 2</h3>
+    <p>Some news this fine day!</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Page 3</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h3>Page 4</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+<br>
+  <script>
+    function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

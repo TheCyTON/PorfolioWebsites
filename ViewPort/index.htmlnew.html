@@ -1,0 +1,657 @@
+<td colspan="1" width="33%" height="1" style="border: 1px solid #808080; padding: 0.05cm">
+<td width="33%" height="1" style="border: 1px solid #808080; padding: 0.05cm">
+<td width="33%" height="1" style="border: 1px solid #808080; padding: 0.05cm"> 
+
+
+<h3 class="western"><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">How
+			to use docker-compose in Ubuntu?</span></font></font></h3>
+		<p>Step 1: install docker-compose.
+			</p>
+			<p>$ docker-compose -v
+			</p>
+			<p>1. https://github.com/docker/compose/rel...
+			</p>
+			<p>or
+			</p>
+			<p>2. Using PIP pip install -U docker-compose
+			</p>
+			<p>Step 2: Create docker compose file at any location on you
+			system.
+			</p>
+			<p>$ mkdir DockerComposeFile
+			</p>
+			<p>$ cd DockerComposeFile
+			</p>
+			<p>$ touch docker-compose.yml
+			</p>
+			<p>$ ls
+			</p>
+			<p>docker-compose.yml .</p>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>ViewPort</title>
+	<meta name="generator" content="LibreOffice 6.0.6.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2018-11-06T10:27:52.850504269"/>
+	<meta name="" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style type="text/css">
+		p { font-family: "Arial" }
+		td p { font-family: "Arial" }
+		h3.cjk { font-family: "Noto Sans CJK SC Regular" }
+		h3.ctl { font-family: "Lohit Devanagari" }
+	</style>
+</head>
+<body lang="en-CA" dir="ltr">
+<p>Page 1 Page 2 Page 3 Page 4
+</p>
+<div id="Home" dir="ltr" style="background: #ff0000">
+	<h3 class="western"><br/>
+<br/>
+
+	</h3>
+	<h3 class="western"><br/>
+<br/>
+
+	</h3>
+	<table width="703" cellpadding="4" cellspacing="0">
+		<col width="358">
+		<col width="11">
+		<col width="10">
+		<col width="11">
+		<col width="8">
+		<col width="80">
+		<col width="80">
+		<col width="79">
+		<tr valign="top">
+
+			<td width="11" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border: 1px solid #000000; padding: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">Step
+				1: install docker-compose. </span></font></font>
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">$
+				docker-compose -v </span></font></font>
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">1.
+				https://github.com/docker/compose/rel... </span></font></font>
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">or
+				</span></font></font>
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">2.
+				Using PIP pip install -U docker-compose </span></font></font>
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">Step
+				2: Create docker compose file at any location on you system. </span></font></font>
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><span style="display: inline-block; border: none; padding: 0cm"><font size="4" style="font-size: 14pt"><font color="#000000">Step
+				2: Create docker compose file at any location on you system. </span></font></font>
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td width="358" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="10" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="11" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="8" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="80" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+				<p><br/>
+
+				</p>
+			</td>
+			<td width="79" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+				<p><br/>
+
+				</p>
+			</td>
+		</tr>
+	</table>
+	<h3 class="western"><br/>
+<br/>
+
+	</h3>
+	<p><br/>
+<br/>
+
+	</p>
+	<p><br/>
+<br/>
+
+	</p>
+	<p><br/>
+<br/>
+
+	</p>
+	<p><br/>
+<br/>
+
+	</p>
+	<p><br/>
+<br/>
+
+	</p>
+	<p><br/>
+<br/>
+
+	</p>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">$
+	mkdir DockerComposeFile </span></font>
+	</p>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">$
+	cd DockerComposeFile </span></font>
+	</p>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">$
+	touch docker-compose.yml </span></font>
+	</p>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">$
+	ls </span></font>
+	</p>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">docker-compose.yml
+	.</span></font></p>
+</div>
+<div id="News" dir="ltr" style="background: #008000">
+	<h3 class="western"><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">Page
+	2</span></font></h3>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">Some
+	news this fine day!</span></font></p>
+</div>
+<div id="Contact" dir="ltr" style="background: #0000ff">
+	<h3 class="western"><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">Page
+	3</span></font></h3>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">Get
+	in touch, or swing by for a cup of coffee.</span></font></p>
+</div>
+<div id="About" dir="ltr" style="background: #ffa500">
+	<h3 class="western"><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">Page
+	4</span></font></h3>
+	<p><span style="display: inline-block; border: none; padding: 0cm"><font color="#000000">Who
+	we are and what we do.</span></font></p>
+</div>
+<p><script>
+            function openPage(pageName,elmnt,color) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(pageName).style.display = "block";
+                elmnt.style.backgroundColor = color;
+
+            }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+
+
+</script><br/>
+<br/>
+
+</p>
+</body>
+</html>
